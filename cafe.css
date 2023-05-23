@@ -7,7 +7,6 @@ html, body {
 .coverPage {
 height: 50rem;
 width: 100%;
-position: absolute;
 }
 
 
@@ -15,7 +14,12 @@ position: absolute;
     height: inherit;
     width: inherit;
     object-fit: cover;
-    position: relative;
+    position: absolute;
     filter: brightness(60%);
 }
 
+.coverContent {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
