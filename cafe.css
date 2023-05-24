@@ -67,3 +67,37 @@ nav {
     font-size: 58px;
     font-weight: 300;
 }
+
+.coffeeInfo {
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    font-family: inter;
+    background-color: #FFF1CC;
+}
+
+.coffeeInfoContent {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+}
+
+.coffeeText > p {
+font-size: 2.5vw;
+}
+
+.coffeeText > h1 {
+    font-weight: bolder;
+}
+
+.coffeeText {
+    padding-right: 80px;
+}
+
+
+.coffeeInfoContent > img {
+    border-radius: 10px;
+    width: 40vw;
+}
