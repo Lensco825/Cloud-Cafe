@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Dancing+Script&family=Gentium+Plus&family=Gruppo&family=Inter&family=Josefin+Slab&family=Lobster+Two&family=PT+Serif&family=Playfair+Display&family=Poppins&family=Raleway:wght@100;200;400&display=swap');
+
+:root {
+  --mellowYellow: #FFF1CC;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -68,36 +73,23 @@ nav {
     font-weight: 300;
 }
 
-.coffeeInfo {
+.buyCoffee {
     height: 50rem;
+    background-color: var(--mellowYellow);
     display: flex;
     align-items: center;
-    font-family: inter;
-    background-color: #FFF1CC;
+    justify-content: space-evenly;
+    border: solid red;
+
 }
 
-.coffeeInfoContent {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
-    padding: 5vw;
-}
-
-.coffeeText > p {
-font-size: 2.5vw;
-}
-
-.coffeeText > h1 {
-    font-weight: bolder;
-}
-
-.coffeeText {
-    padding-right: 80px;
+.coffee {
+    display: grid;
+    height: 20rem;
+    place-items: center;
 }
 
 
-.coffeeInfoContent > img {
-    border-radius: 10px;
-    width: 40vw;
+.coffeeimg, img {
+    width: 20vw;
 }
