@@ -79,6 +79,7 @@ nav, .navContent {
 
 nav {
     padding: 0 15px 0 15px;
+    background-color: black;
     font-family: Inter;
     height: 5rem;
     width: 100%;
