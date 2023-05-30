@@ -68,7 +68,7 @@ nav, .navContent {
 
 .navContent {
     gap: 22px;
-
+    justify-content: space-around;
 }
 
 .navContent > p {
@@ -78,13 +78,15 @@ nav, .navContent {
 
 
 nav {
-    padding: 0 15px 0 15px;
+    display: grid;
     background-color: black;
     font-family: Inter;
     height: 5rem;
     width: 100%;
     position: fixed;
     justify-content: space-between;
+    grid-template-columns: 40% 60%;
+    padding: 0 15px 0 15px;
 }
 
 .cloudIcon {
@@ -148,3 +150,52 @@ nav {
     object-fit: cover;
 }
 
+.newSelections {
+    height: 90rem;
+    background-color: var(--mellowYellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.newSelection {
+    width: 80%;
+    height: 18rem;
+    display: grid;
+    grid-template-columns: 35% auto;
+    gap: 20px;
+}
+
+.newSelection:nth-child(2) {
+    grid-template-columns: auto 35%;
+}
+
+.selectionImg {
+    width: 28vw;
+    height: 100%;
+}
+
+.selectionImg > img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.selectionInfo {
+    font-family: Raleway;
+}
+
+.selectionInfo > button {
+    background: transparent;
+    border: solid 1px;
+    border-radius: 5px;
+    height: 40px;
+    transition: 0.3s;
+    font-family: Poppins;
+}
+
+.selectionInfo > button:hover {
+    background-color: black;
+    color: var(--mellowYellow);
+}
