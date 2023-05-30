@@ -14,7 +14,9 @@ html, body {
 height: 50rem;
 width: 100%;
 display: grid;
+overflow: hidden;
 }
+
 
 
 .imageCover {
@@ -31,6 +33,8 @@ display: grid;
     position: relative;
 }
 
+
+
 nav, .navContent {
     color: white;
     display: flex;
@@ -38,19 +42,48 @@ nav, .navContent {
 
 }
 
+.navContent > p {
+    position: relative;
+  }
+  
+  
+  .navContent > p::after {
+    content: ' ';
+  position: absolute;
+   left: 0;
+   top: 20px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+    transform-origin: right;
+  }
+  
+  .navContent > p:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
 .navContent {
     gap: 22px;
+
 }
 
 .navContent > p {
     cursor: pointer;
 }
 
+
+
 nav {
-    justify-content: space-between;
     padding: 0 15px 0 15px;
     font-family: Inter;
     height: 5rem;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
 }
 
 .cloudIcon {
@@ -85,7 +118,7 @@ nav {
 .buyCoffee > h1 {
     text-align: start;
     padding-left: 55px;
-    width: 100%;
+    width: 80%;
     font-family: Poppins;
 }
 
@@ -113,3 +146,4 @@ nav {
 .coffeeimg > img {
     object-fit: cover;
 }
+
