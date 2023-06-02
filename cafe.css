@@ -104,6 +104,7 @@ nav {
     font-family: Playfair Display;
 }
 
+
 .phrase > h1 {
     font-size: 58px;
     font-weight: 300;
@@ -168,18 +169,22 @@ nav {
 }
 
 .newSelection:nth-child(2) {
-    grid-template-columns: auto 35%;
+    grid-template-columns: 65% 35%;
+    text-align: right;
 }
 
 .selectionImg {
     width: 28vw;
     height: 100%;
+    max-width: 29vw;
+    max-height: 50vh;
 }
 
 .selectionImg > img {
     width: inherit;
     height: inherit;
     object-fit: cover;
+    max-width: inherit;
 }
 
 .selectionInfo {
@@ -198,4 +203,57 @@ nav {
 .selectionInfo > button:hover {
     background-color: black;
     color: var(--mellowYellow);
+}
+
+.menu {
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.course, .course > img {
+    width: 40vw;
+    height: 40vh;
+    border-radius: 5px;
+}
+
+.course > img {
+    object-fit: cover;
+    position: absolute;
+}
+
+span {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    position: relative;
+    left: 85%;
+    top: 85%;
+    cursor: pointer;
+}
+
+.coffeeInfoPage {
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffeeInfo, .coffeeInfo > img {
+    width: 80vw;
+    height: 70vh;
+}
+
+.coffeeInfo > img {
+    object-fit: cover;
+    position: absolute;
+}
+
+.coffeeInfoText {
+    position: relative;
+    top: 65%;
+    font-family: Raleway;
+    left: 10%;
 }
