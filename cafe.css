@@ -291,3 +291,44 @@ span {
     left: 10%;
 }
 
+.newsletter {
+    text-align: center;
+    padding: 20px;
+}
+
+.emailForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailSubmitter {
+    font-family: Raleway;
+    width: 13rem;
+}
+
+.emailForm > ion-icon {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Poppins;
+    height: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style-type: none;
+    height: 100%;
+    display: grid;
+}
+
+li:nth-child(1) {
+    font-weight: bolder;
+}
