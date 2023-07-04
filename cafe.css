@@ -98,18 +98,29 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    color: white;
     height: 45rem;
-    font-family: Playfair Display;
-}
 
+    text-align: center;
+    font-size: 78px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    
+}
 
 .phrase > h1 {
-    color: #FFF1CC;
-    font-size: 58px;
-    font-weight: 300;
+    background-position-y: center;
+    font-size: 88px;
+    font-weight: bold;
+    background-clip: text;
+ -webkit-background-clip: text;
+ color: transparent; 
+ background-image: url("https://images.unsplash.com/photo-1603437873662-dc1f44901825?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
 }
+
+
 
 .buyCoffee {
     height: 50rem;
