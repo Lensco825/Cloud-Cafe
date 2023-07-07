@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Dancing+Script&family=Gentium+Plus&family=Gruppo&family=Inter&family=Josefin+Slab&family=Lobster+Two&family=PT+Serif&family=Playfair+Display&family=Poppins&family=Raleway:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
 
 :root {
   --mellowYellow: #FFF1CC;
@@ -120,7 +121,51 @@ nav {
  background-image: url("https://images.unsplash.com/photo-1603437873662-dc1f44901825?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
 }
 
+.nightEvents {
+    height: 50rem;
+    overflow: hidden;
+    background-color: var(--mellowYellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.eventList {
+    font-size: 17px;
+    font-family: Playfair Display SC;
+}
+
+.eventList > h1 {
+    font-family: Playfair Display;
+}
+
+.eventContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+@media (max-width: 470px) {
+   .eventContainer {
+    display: block;
+   }
+}
+
+.eventImg {
+    width: 42vw;
+    height: 42vw;
+    overflow: hidden;
+}
+
+.eventImg > img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    max-width: 30rem;
+    min-width: 150px;
+    min-height: 150px;
+}
 
 .buyCoffee {
     height: 50rem;
