@@ -145,6 +145,10 @@ nav {
     gap: 15px;
 }
 
+.eventImg {
+    box-shadow: -28px -35px ;
+}
+
 .morningMenu {
     height: 50em;
     background-color: #FFF1CC;
@@ -152,7 +156,7 @@ nav {
     align-items: center;
     justify-content: center;
     font-family: Playfair Display SC;
-    text-align: center;
+
 }
 
 .breakfastContainer {
@@ -160,13 +164,16 @@ nav {
     height: 35em;
     display: flex;
     justify-content: space-between;
-    background-color: #ffd60a;
+
 }
+
+
 
 .breakfastImg, .breakfastImg > img {
     width: 22em;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .breakfastInfo {
@@ -180,6 +187,7 @@ font-size: 34px;
 
 .breakfastInfo > h3 {
     font-weight: lighter;
+    padding-right: 35px;
 }
 .breakfastList  {
     font-weight: bold;
@@ -192,6 +200,18 @@ font-size: 34px;
     cursor: pointer;
     font-weight: 100;
 }
+
+
+
+@media (max-width: 735px) {
+    .morningMenu {
+        height: 90em;
+    }
+    .breakfastContainer {
+        flex-direction: column-reverse;
+    }
+}
+
 
 
 @media (max-width: 860px) {
@@ -231,13 +251,6 @@ font-size: 34px;
     font-family: Poppins;
 }
 
-.coffeeContainer {
-    height: 40rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 .coffee {
     text-align: center;
